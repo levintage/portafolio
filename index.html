@@ -1,15 +1,145 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tania Torres</title> 
+    <link rel="preloaj" href="normalize.css" as="normalize.css">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@200&family=Lora:ital@1&display=swap" rel="stylesheet">
+    <link rel="preloaj" href="style.css" as="style.css">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
 </head>
+
 <body>
-    <script src="code.js">
-    
-    </script>
-    <p>hola mundo</p>
+<div class="contenedor-grid transform">
+  <aside class="sidebar">
+    <div>
+  <header>
+  <h1 class="titulo">Tania Torres <span class="header-special">Frontend developer</span></h1>
+  </header>
+  </div>
+  <div class="head-text">
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+  </div>
+
+<div class="contenedor-navegacion transform">
+<nav>
+  <ul class="navegacion">
+ <li class="navegacion--icono"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-zodiac-aquarius" width="20" height="20" viewBox="0 0 24 24" stroke-width="1" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M3 10l3 -3l3 3l3 -3l3 3l3 -3l3 3" />
+  <path d="M3 17l3 -3l3 3l3 -3l3 3l3 -3l3 3" />
+</svg>
+ 
+<a class="navegacion--content titulo" href="###">sobre mi</a>
+</li>
+
+
+<li class="navegacion--icono"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-zodiac-aquarius" width="20" height="20" viewBox="0 0 24 24" stroke-width="1" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M3 10l3 -3l3 3l3 -3l3 3l3 -3l3 3" />
+  <path d="M3 17l3 -3l3 3l3 -3l3 3l3 -3l3 3" />
+</svg>
+
+<a class="navegacion--content titulo" href="###">Proyectos</a>
+</li>
+
+
+
+<li class="navegacion--icono"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-zodiac-aquarius" width="20" height="20" viewBox="0 0 24 24" stroke-width="1" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M3 10l3 -3l3 3l3 -3l3 3l3 -3l3 3" />
+  <path d="M3 17l3 -3l3 3l3 -3l3 3l3 -3l3 3" />
+</svg>
+
+<a class="navegacion--content titulo" href="###">Logros</a>
+</li>
+ 
+
+
+<li class="navegacion--icono"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-zodiac-aquarius" width="20" height="20" viewBox="0 0 24 24" stroke-width="1" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M3 10l3 -3l3 3l3 -3l3 3l3 -3l3 3" />
+  <path d="M3 17l3 -3l3 3l3 -3l3 3l3 -3l3 3" />
+</svg>
+
+<a class="navegacion--content titulo" href="###">Contáctame</a>
+</li>
+</ul>
+</nav>
+</div>
+</aside> <!--sidebar-->
+
+<main>
+  <div class="contenido-principal transform">
+    <div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque faucibus faucibus eros quis venenatis. Duis mollis tristique justo quis facilisis. Interdum et malesuada fames ac ante ipsum primis in faucibus. In eleifend elit sed lectus scelerisque scelerisque</p>
+      <p> Cras rutrum eros fringilla, maximus neque sit amet, aliquet lacus. Vestibulum vulputate leo vel rutrum convallis. Fusce venenatis mollis consectetur. Mauris convallis condimentum enim a dictum. </p>
+    </div>
+     <!-- add con JS 
+    <div>
+      <h2>Proyectos</h2>
+      <a></a>
+      <a></a>
+    </div>
+    --> 
+    <!--aqui puedo agg los logros que vaya a obtener
+     <h2>Logros</h2>
+     <a></a>
+     <a></a>
+-->
+
+   <h2 class="titulo">Contacto</h2>
+   <div class="contenedor-contacto transform">
+   <form class="formulario">
+  <fieldset class="inside">
+    <legend>Ponte en contacto conmigo</legend>
+  
+    <div class="campo">
+    <label class="campo__label" for="name">Nombre</label>
+    <input class="campo__field" type="text" placeholder="Nombre" id="name">
+    </div>
+
+    <div class="campo">
+    <label class="campo__label" for="tel">Teléfono</label>
+    <input class="campo__field" type="tel" placeholder="Teléfono" id="tel">
+    </div>
+
+    <div class="campo">
+      <label class="campo__label" for="email">Correo</label>
+      <input class="campo__field" type="email" placeholder="Correo" id="email">
+    </div>
+
+    <div class="campo">
+      <label class="campo__label" for="mensaje">Mensaje</label>
+      <textarea class="campo__field campo__field--textarea" id="mensaje"></textarea>
+    </div>
+
+    <div class="form--button">
+     <input type="submit" class="button">
+    </div>
+  </fieldset>
+</form>
+</div> <!--contacto-->
+</div><!--contenido principal-->
+</main> 
+</div> <!--contenedor grid-->
 </body>
+
+<footer class="contenedor footer">
+<p>Todos los derechos reservados Tania Torres</p>
+<div class="footer-icono">
+  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00bfd8" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+    <path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+    <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
+  </svg>
+</div>
+<div class="footer-locacion">
+  <p>Villavicencio, Meta - Colombia</p>
+</div>
+</footer>
 </html>
