@@ -22,18 +22,18 @@ body {
   color: var(--colorPrimario);
   background-color: var(--oscuro);
   margin: 0 auto;
+  padding: 96px 0;
 }
 
 /*generales*/
 
+h1, h2, h3 {
+  margin: 0;
+}
+
 h1{
   font-size: 3.5rem;
   font-family:'Raleway', sans-serif;
-}
-
-
-.header-special{
-    font-size: 2rem;
 }
 
 h2{
@@ -44,68 +44,85 @@ h2{
 h3{
  font-size: 1.2rem;
 }
+
+.titulo {
+  font-size: 4.8rem;
+  font-family:'Raleway', sans-serif;
+}
+
+.subtitulo {
+  font-size: 2rem;
+}
    
 .titulo:hover {
     color: var(--colorSecundario);
     cursor: pointer;
 }
 
-p{
-
+.parrafo-corto {
+  max-width: 320px;
 }
 
 .head-text{
   margin-top: 4rem;
 }
 
-a{
+a {
 text-decoration: none;
 color: var(--colorPrimario);
 font-family: var(--fontTitle);
 font-size: 2rem;
 }
 
-.contenedor-grid{
+.contenedor{
   max-width: 120rem;
   width: 95%;
   margin: 0 auto;
 }
 
-@media (min-width:768px){
-  .contenedor-grid{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-  }
+.flex{
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
 }
 
-.contenido-principal{
+@media (min-width:768px){
+  .flex{
+    flex-direction: row;
+  }
+
+  .flex__item {
+    width: 50%;
+  } 
+}
+
+.contenido-principal {
   margin: 4rem;
 }
 
-.sidebar{
+.sidebar {
   margin: 3rem;
 }
 
-  .navegacion{
-   display: flex;
-   flex-direction: column;
-   justify-content: space-between;
-   width:min(50rem, 100%);
-   gap: 3rem;
-   list-style: none;
-   align-content: left;
-   padding-top: 4rem;
+  .navegacion {
+    margin-top: 6.4rem;
+    list-style: none;
+    padding: 0;
   }
-  
-  @media (min-width: 998px) {
-    .navegacion{
-      padding: 10rem;
-    }
+
+  .navegacion--icono {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
   }
+
+  .navegacion--icono {
+    margin-bottom: 1rem;
+  }
+
 /*formulario*/
 
-.formulario{
+.formulario {
   background-color: #88f1c451;
   margin:auto;
   width: 90%;
@@ -115,21 +132,21 @@ font-size: 2rem;
   font-family: var(--fontText);
 }
 
-legend{
+legend {
  text-align: center;
  font-size: 2rem;
 }
 
-.campo{
+.campo {
   margin-top: 2rem;
 }
 
-.campo__label{
+.campo__label {
  margin-bottom: 1rem;
  cursor: pointer;
 }
 
-.campo__field{
+.campo__field {
   flex: 3;
   width: 100%;
   border-bottom: 1px solid 	#C0C0C0;
@@ -137,11 +154,11 @@ legend{
   }
 
   
-.campo__field--textarea{
+.campo__field--textarea {
   height: 10rem;
 }
 
-.button{
+.button {
   background-color:var(--colorPrimario);
   padding: 1rem 2rem;
   border-radius: 1px solid #000000;
@@ -153,19 +170,19 @@ legend{
 }
 
 @media (min-width:998px ) {
-.campo{
+.campo {
   display: flex;
   margin-top: 2rem;
 }
 
-.campo__label{
+.campo__label {
  flex: 0 0 9rem;
  text-align: left;
  padding-right: 2rem;
  cursor: pointer;
 }
 
-.campo__field{
+.campo__field {
   flex: 3;
   width: 100%;
   border-bottom: 1px solid 	#C0C0C0;
@@ -173,11 +190,11 @@ legend{
   }
 
   
-.campo__field--textarea{
+.campo__field--textarea {
   height: 10rem;
 }
 
-.button{
+.button {
   background-color:var(--colorPrimario);
   padding: 1rem 2rem;
   border-radius: 1px solid #000000;
@@ -189,7 +206,52 @@ legend{
 }
 }
 
-.button:hover{
+.button:hover {
   background-color: bisque;
+}
+
+.card__title,
+.card__description,
+.card__skills-item {
+  margin: 0;
+}
+
+.card {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card__image {
+  width: 100%;
+}
+
+.card__title {
+  margin-top: 1.5rem;
+  font-size: 2rem;
+}
+
+.card__description {
+  margin-top: 1.5rem;
+  font-size: 1.8rem;
+}
+
+.card__skills {
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.card__skills-item {
+  font-size: 1.2rem;
+  border: 1px solid white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 1rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
 }
 
