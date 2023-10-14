@@ -53,8 +53,8 @@ h3{
 .subtitulo {
   font-size: 2rem;
 }
-   
-.titulo:hover {
+
+.focus:hover {
     color: var(--colorSecundario);
     cursor: pointer;
 }
@@ -86,6 +86,11 @@ font-size: 2rem;
   gap: 1.6rem;
 }
 
+.flex__item {
+  margin: 2rem;
+}
+
+
 @media (min-width:768px){
   .flex{
     flex-direction: row;
@@ -96,13 +101,12 @@ font-size: 2rem;
   } 
 }
 
-.contenido-principal {
-  margin: 4rem;
+
+.flex__item {
+  margin: 2rem;
 }
 
-.sidebar {
-  margin: 3rem;
-}
+
 
   .navegacion {
     margin-top: 6.4rem;
@@ -120,8 +124,58 @@ font-size: 2rem;
     margin-bottom: 1rem;
   }
 
-/*formulario*/
+  /*contenedor proyectos*/
+.card__title,
+.card__description,
+.card__skills-item {
+  margin: 0;
+}
 
+.card {
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+.card__image {
+  width: 100%;
+}
+
+.card__title {
+  margin-top: 1.5rem;
+  font-size: 2rem;
+}
+
+.card__description {
+  margin-top: 1.5rem;
+  font-size: 1.8rem;
+}
+
+.card__skills {
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.card__skills-item {
+  font-size: 1.2rem;
+  color:var(--colorSecundario);
+  border: 1px solid var(--colorSecundario);
+  padding: 0.5rem 1.5rem;
+  border-radius: 1rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+/*formulario*/
+/*
 .formulario {
   background-color: #88f1c451;
   margin:auto;
@@ -210,48 +264,16 @@ legend {
   background-color: bisque;
 }
 
-.card__title,
-.card__description,
-.card__skills-item {
-  margin: 0;
+.contacto {
+  margin-top: 2rem;
 }
+*/
 
-.card {
-  border-radius: 10px;
-  overflow: hidden;
-}
 
-.card__image {
-  width: 100%;
-}
-
-.card__title {
-  margin-top: 1.5rem;
-  font-size: 2rem;
-}
-
-.card__description {
-  margin-top: 1.5rem;
-  font-size: 1.8rem;
-}
-
-.card__skills {
-  margin-top: 1.5rem;
+.footer{
   display: flex;
-  align-items: center;
+  flex-direction: row;
   gap: 1rem;
+  margin-top: 32px;
+  cursor: pointer;
 }
-
-.card__skills-item {
-  font-size: 1.2rem;
-  border: 1px solid white;
-  padding: 0.5rem 1.5rem;
-  border-radius: 1rem;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
-}
-
