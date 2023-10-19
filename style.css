@@ -57,6 +57,8 @@ h3{
 .focus:hover {
     color: var(--colorSecundario);
     cursor: pointer;
+    font-size: 3rem;
+    transition: 0.5s;
 }
 
 .parrafo-corto {
@@ -83,30 +85,27 @@ font-size: 2rem;
 .flex{
   display: flex;
   flex-direction: column;
+  position: relative;
   gap: 1.6rem;
 }
 
 .flex__item {
   margin: 2rem;
+  width: 50%;
 }
 
 
-@media (min-width:768px){
+@media (min-width:768px) {
   .flex{
     flex-direction: row;
   }
-
-  .flex__item {
-    width: 50%;
-  } 
 }
 
-
-.flex__item {
-  margin: 2rem;
+.flex__left{
+  position: sticky;
+  top:30px;
+  left: 0;
 }
-
-
 
   .navegacion {
     margin-top: 6.4rem;
@@ -140,7 +139,9 @@ font-size: 2rem;
 
 .card__image {
   width: 100%;
+  background-repeat: no-repeat;
 }
+
 
 .card__title {
   margin-top: 1.5rem;
@@ -168,10 +169,22 @@ font-size: 2rem;
   border-radius: 1rem;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
+@media (min-width:768px ) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  
+}
+
+
+.footer{
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin-top: 32px;
+  cursor: pointer;
 }
 
 /*formulario*/
@@ -270,10 +283,3 @@ legend {
 */
 
 
-.footer{
-  display: flex;
-  flex-direction: row;
-  gap: 1rem;
-  margin-top: 32px;
-  cursor: pointer;
-}
