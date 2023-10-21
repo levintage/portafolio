@@ -17,12 +17,11 @@ html {
   }
 
 body {
-  font-size: 16px;
+  font-size: 20px;
   font-family:'Barlow', sans-serif;
   color: var(--colorPrimario);
   background-color: var(--oscuro);
   margin: 0 auto;
-  padding: 96px 0;
 }
 
 /*generales*/
@@ -34,6 +33,7 @@ h1, h2, h3 {
 h1{
   font-size: 3.5rem;
   font-family:'Raleway', sans-serif;
+  width: auto;
 }
 
 h2{
@@ -46,7 +46,7 @@ h3{
 }
 
 .titulo {
-  font-size: 4.8rem;
+  font-size: 5rem;
   font-family:'Raleway', sans-serif;
 }
 
@@ -59,6 +59,14 @@ h3{
     cursor: pointer;
     font-size: 3rem;
     transition: 0.5s;
+}
+
+.pointer {
+  pointer-events: visibleFill;
+}
+
+.back:hover {
+  background-color: #88f1c32f;
 }
 
 .parrafo-corto {
@@ -76,18 +84,49 @@ font-family: var(--fontTitle);
 font-size: 2rem;
 }
 
-.contenedor{
-  max-width: 120rem;
-  width: 95%;
-  margin: 0 auto;
-}
+
+  .contenedor{
+    max-width: 120rem;
+    width: 95%;
+    margin: 0 auto;
+  }
+  
 
 .flex{
   display: flex;
   flex-direction: column;
-  position: relative;
-  gap: 1.6rem;
+  max-width: 120rem;
+  width:auto;
+  padding: 1rem;
+  gap: 1rem;
 }
+
+@media (min-width: 300px) {
+  .flex {
+    align-items: center;
+    width: max-content;
+}
+}
+
+@media (min-width:768px) {
+  .flex{
+    flex-direction: row;
+    width: 95%;
+  }
+  .flex__left{
+    margin-left: 8rem;
+    margin-top: 3rem;
+    position: fixed;
+    top:30px;
+    left: 0;
+  }
+
+  .contenido-principal {
+    position: relative;
+    top: 30px;
+  }
+}
+
 
 .flex__item {
   margin: 2rem;
@@ -95,20 +134,8 @@ font-size: 2rem;
 }
 
 
-@media (min-width:768px) {
-  .flex{
-    flex-direction: row;
-  }
-}
-
-.flex__left{
-  position: sticky;
-  top:30px;
-  left: 0;
-}
-
   .navegacion {
-    margin-top: 6.4rem;
+    margin-top: 4rem;
     list-style: none;
     padding: 0;
   }
@@ -173,7 +200,7 @@ font-size: 2rem;
   .grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
+    gap: 5rem;
   }
   
 }
